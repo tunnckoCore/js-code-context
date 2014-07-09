@@ -1,3 +1,6 @@
+## v1.0.1 / July 10, 2014
+- add sync support
+
 ## v1.0.0 / July 09, 2014
 - initial release
 
