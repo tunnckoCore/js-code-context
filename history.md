@@ -1,7 +1,7 @@
-## v1.0.0 [![Using ferver][ferver-img]][ferver-url] / June 09, 2014
+## v1.0.0 / July 09, 2014 [![Using ferver][ferver-img]][ferver-url]
 - init release
 
-## v0.0.0 [![Using ferver][ferver-img]][ferver-url] / June 09, 2014
+## v0.0.0 / July 09, 2014 [![Using ferver][ferver-img]][ferver-url]
 - initial commit
 
 
