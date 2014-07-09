@@ -1,6 +1,6 @@
 {
   "name": "js-code-context",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "RegExp expressions to parse javascript code context - for node and the browser.",
   "main": "index.js",
   "scripts": {
