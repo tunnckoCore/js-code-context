@@ -1,4 +1,4 @@
-## v1.0.0 / July 09, 2014 [![Using ferver][ferver-img]][ferver-url]
+## [![Using ferver][ferver-img]][ferver-url] v1.0.0 July 09, 2014
 - init release
 
 ## v0.0.0 / July 09, 2014 [![Using ferver][ferver-img]][ferver-url]
