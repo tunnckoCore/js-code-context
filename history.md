@@ -1,9 +1,15 @@
-## v0.0.0 / June 09, 2014
-- initial commits
+## v1.0.0 [![Using ferver][ferver-img]][ferver-url] / June 09, 2014
+- init release
+
+---
+
+## v0.0.0 [![Using ferver][ferver-img]][ferver-url] / June 09, 2014
+- initial commit
 
 ---
 
 
+[mocha-url]: https://github.com/visionmedia/mocha
 
 [npmjs-url]: http://npm.im/koa-better-body
 [npmjs-shields]: http://img.shields.io/npm/v/koa-better-body.svg
@@ -24,3 +30,6 @@
 [author-twitter]: https://twitter.com/tunnckoCore
 [author-website]: http://www.whistle-bg.tk
 [author-npmjs]: https://npmjs.org/~tunnckocore
+
+[ferver-img]: http://img.shields.io/badge/using-ferver-585858.svg
+[ferver-url]: https://github.com/jonathanong/ferver
