@@ -1,8 +1,4 @@
-## v1.0.0 / July 09, 2014
-- initial release
-
-## v0.0.0 / July 09, 2014
-- initial commit
++ add cli
 
 
 [mocha-url]: https://github.com/visionmedia/mocha

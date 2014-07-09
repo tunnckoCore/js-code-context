@@ -1,4 +1,4 @@
-Copyright (c) 2014 [Charlike Mike Reagent][author-website], [contributors](https://github.com/tunnckoCore/js-code-context/graphs/contributors).  
+Copyright (c) 2014 [Charlike Mike Reagent][author-website], [contributors][contrib-url].
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
@@ -23,6 +23,9 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 
 
+[mocha-url]: https://github.com/visionmedia/mocha
+
+[contrib-url]: https://github.com/tunnckoCore/js-code-context/graphs/contributors
 [npmjs-url]: http://npm.im/js-code-context
 [npmjs-shields]: http://img.shields.io/npm/v/js-code-context.svg
 [npmjs-install]: https://nodei.co/npm/js-code-context.svg?mini=true
@@ -40,6 +43,8 @@ OTHER DEALINGS IN THE SOFTWARE.
 [author-gittip]: https://www.gittip.com/tunnckoCore
 [author-github]: https://github.com/tunnckoCore
 [author-twitter]: https://twitter.com/tunnckoCore
-
 [author-website]: http://www.whistle-bg.tk
 [author-npmjs]: https://npmjs.org/~tunnckocore
+
+[ferver-img]: http://img.shields.io/badge/using-ferver-585858.svg
+[ferver-url]: https://github.com/jonathanong/ferver

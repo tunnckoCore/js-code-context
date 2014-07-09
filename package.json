@@ -30,15 +30,5 @@
     "name": "Charlike Mike Reagent",
     "email": "mameto_100@mail.bg",
     "url": "http://www.whistle-bg.tk"
-  },
-  "maintainers": [{
-    "name": "Charlike Mike Reagent",
-    "email": "mameto_100@mail.bg",
-    "url": "http://www.whistle-bg.tk"
-  }],
-  "contributors": [{
-    "name": "Charlike Mike Reagent",
-    "email": "mameto_100@mail.bg",
-    "url": "http://www.whistle-bg.tk"
-  }]
+  }
 }

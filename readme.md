@@ -1,5 +1,9 @@
-# js-code-context [![NPM version][npmjs-shields]][npmjs-url] [![Build Status][travis-img]][travis-url] [![Dependency Status][depstat-img]][depstat-url]
+# js-code-context
 > RegExp expressions to parse javascript code context - for node and the browser.
+
+[![NPM version][npmjs-shields]][npmjs-url]
+[![Using ferver][ferver-img]][ferver-url]
+[![Build Status][travis-img]][travis-url]
 
 
 ## Install [![Nodei.co stats][npmjs-install]][npmjs-url] 
@@ -48,11 +52,13 @@ $ npm test
 
 
 ## License [![MIT license][license-img]][license-url]
-Copyright (c) 2014 [Charlike Mike Reagent][author-website], [contributors](https://github.com/tunnckoCore/js-code-context/graphs/contributors).  
+Copyright (c) 2014 [Charlike Mike Reagent][author-website], [contributors][contrib-url].  
 Released under the [`MIT`][license-url] license.
 
 
 [mocha-url]: https://github.com/visionmedia/mocha
+
+[contrib-url]: https://github.com/tunnckoCore/js-code-context/graphs/contributors
 [npmjs-url]: http://npm.im/js-code-context
 [npmjs-shields]: http://img.shields.io/npm/v/js-code-context.svg
 [npmjs-install]: https://nodei.co/npm/js-code-context.svg?mini=true
@@ -70,6 +76,8 @@ Released under the [`MIT`][license-url] license.
 [author-gittip]: https://www.gittip.com/tunnckoCore
 [author-github]: https://github.com/tunnckoCore
 [author-twitter]: https://twitter.com/tunnckoCore
-
 [author-website]: http://www.whistle-bg.tk
 [author-npmjs]: https://npmjs.org/~tunnckocore
+
+[ferver-img]: http://img.shields.io/badge/using-ferver-585858.svg
+[ferver-url]: https://github.com/jonathanong/ferver
