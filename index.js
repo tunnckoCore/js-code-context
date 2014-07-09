@@ -7,6 +7,14 @@
 (function() {
   'use strict';
 
+  var syncResult = [];
+
+  function parseCodeContextSync(context, line) {
+    parseCodeContext(context, line, function(err, res) {
+      syncResult.push(err ? [err] : res);
+    });
+    return syncResult;
+  }
   function parseCodeContext(context, line, cback) {
     var content, result = [];
     if (typeof line === 'number') {
@@ -142,6 +150,7 @@
 
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = parseCodeContext;
+    module.exports.sync = parseCodeContextSync;
   } else {
     window.jsCodeContext = parseCodeContext;
   }

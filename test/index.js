@@ -12,16 +12,16 @@ var context = fs.readFileSync('./test/fixture.js','utf-8');
 
 describe('js-code-context', function () {
   it('should parse full content, line by line, returns object with length 7', function(done) {
-    parseCodeContext(context, function(err, obj) {
-      obj.should.be.an.instanceOf(Object).and.have.lengthOf(7);
+    parseCodeContext(context, function(err, arr) {
+      arr.should.be.an.Array.and.have.lengthOf(7);
       done();
     });
   });
   it('should parse only 7th line of content, returns object with length 1', function(done) {
-    parseCodeContext(context, 6, function(err, obj) {
+    parseCodeContext(context, 6, function(err, arr) {
 
-      obj.should.be.an.Array.and.have.lengthOf(1);
-      obj = obj[0];
+      arr.should.be.an.Array.and.have.lengthOf(1);
+      var obj = arr[0];
       obj.should.be.an.Object;
       obj.should.be.an.instanceOf(Object);
       obj.should.have.property('type','function');
@@ -32,5 +32,10 @@ describe('js-code-context', function () {
       obj.should.have.property('full','funcExpression(arg)');
       done();
     });
+  });
+  it('should be sync', function(done) {
+    var arr = parseCodeContext.sync(context, 6);
+    arr.should.be.an.Array.and.have.lengthOf(1);
+    done();
   });
 });

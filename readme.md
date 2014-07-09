@@ -31,6 +31,10 @@ parseCodeContext(context, 6, function(err, obj) {
   console.log(obj)
   //=> returns array with 1 object for parsed 7th line of context
 });
+
+var response = parseCodeContext.sync(context, 6);
+//=> returns array with 1 object for parsed 7th line of context
+//=> or array with error object
 ```
 
 
