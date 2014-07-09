@@ -73,5 +73,3 @@ Released under the [`MIT`][license-url] license.
 
 [author-website]: http://www.whistle-bg.tk
 [author-npmjs]: https://npmjs.org/~tunnckocore
-
-curl -u "tunnckoCore:e02150e5b6e73e931c4b89762f36074825e53e68" https://api.github.com/user/repos -d '{"name":"js-code-context","description":"RegExp expressions to parse javascript code context - for node and the browser."}'
