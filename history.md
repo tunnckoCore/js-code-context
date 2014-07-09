@@ -1,12 +1,8 @@
 ## v1.0.0 [![Using ferver][ferver-img]][ferver-url] / June 09, 2014
 - init release
 
----
-
 ## v0.0.0 [![Using ferver][ferver-img]][ferver-url] / June 09, 2014
 - initial commit
-
----
 
 
 [mocha-url]: https://github.com/visionmedia/mocha
