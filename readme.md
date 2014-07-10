@@ -15,7 +15,7 @@ $ npm install js-code-context
 
 
 ## Usage & Example
-> For a more comprehensive example, see the [tests](./test/index.js).
+> For a more comprehensive examples, see the [tests](./test/index.js).
 
 ```js
 var fs = require('fs');
@@ -35,6 +35,26 @@ parseCodeContext(context, 6, function(err, obj) {
 var response = parseCodeContext.sync(context, 6);
 //=> returns array with 1 object for parsed 7th line of context
 //=> or array with error object
+```
+
+
+## CLI
+> CLI uses `.sync` method. But it's not so sync, if we must be honest - in fact it's asynchronous. It just returns resulted array in variable, not in callback.
+
+```
+$ npm install --global js-code-context
+```
+```
+$ jsCodeContext --help
+
+Options
+  --help | -h  show help
+  --line | -l  specify which line to parse
+  --file | -f  file that want to parse
+
+Example
+  $ jsCodeContext -f ./test/fixture.js -l 6
+  //=> array with one object
 ```
 
 

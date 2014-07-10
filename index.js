@@ -10,9 +10,13 @@
   var syncResult = [];
 
   function parseCodeContextSync(context, line) {
-    parseCodeContext(context, line, function(err, res) {
-      syncResult.push(err ? [err] : res);
-    });
+    var done = function(err, res) {
+      syncResult = err ? [err] : res;
+    };
+    if (!line) {
+      line = done;
+    }
+    parseCodeContext(context, line, done);
     return syncResult;
   }
   function parseCodeContext(context, line, cback) {
@@ -22,9 +26,12 @@
     } else if (!cback && typeof line === 'function') {
       cback = line;
       content = context.split('\n');
+    } else {
+      content = context.split('\n');
     }
 
     each(content, function(item, index, done) {
+      index = index;
       // function statement
       if (/^function ([\w$]+) *\((.*)\)/.exec(item)) {
         result.push({
@@ -96,8 +103,9 @@
           string: RegExp.$1
         });
       }
+      done();
     }, function(err) {
-      if (err) {return cback(err)};
+      if (err) {return cback(err);}
     });
     return cback(null, result);
   }
@@ -105,7 +113,7 @@
   function once(fn) {
     var called = false;
     if (typeof fn !== 'function') {
-      throw new TypeError;
+      throw new TypeError('Must be fuction.');
     }
     return function() {
       if (called) {
@@ -113,7 +121,7 @@
       }
       called = true;
       fn.apply(this, arguments);
-    }
+    };
   }
 
   function each(arr, next, cb) {
