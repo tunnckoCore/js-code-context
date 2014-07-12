@@ -37,9 +37,9 @@
         result.push({
           type: 'function',
           name: RegExp.$1,
-          string: RegExp.$1,
+          clean: RegExp.$1,
           args: RegExp.$2,
-          clean: RegExp.$1 + '()',
+          string: RegExp.$1 + '()',
           full: RegExp.$1 + '(' + RegExp.$2 + ')'
         });
         // function expression
@@ -47,9 +47,9 @@
         result.push({
           type: 'function',
           name: RegExp.$1,
-          string: RegExp.$1,
+          clean: RegExp.$1,
           args: RegExp.$2,
-          clean: RegExp.$1 + '()',
+          string: RegExp.$1 + '()',
           full: RegExp.$1 + '(' + RegExp.$2 + ')'
         });
         // prototype method
@@ -59,9 +59,9 @@
           constructor: RegExp.$1,
           cons: RegExp.$1,
           name: RegExp.$2,
-          string: RegExp.$1 + '.prototype.' + RegExp.$2,
+          clean: RegExp.$1 + '.prototype.' + RegExp.$2,
           args: RegExp.$3,
-          clean: RegExp.$1 + '.prototype.' + RegExp.$2 + '()',
+          string: RegExp.$1 + '.prototype.' + RegExp.$2 + '()',
           full: RegExp.$1 + '.prototype.' + RegExp.$2 + '(' + RegExp.$3 + ')',
         });
         // prototype property
@@ -72,7 +72,7 @@
           cons: RegExp.$1,
           name: RegExp.$2,
           value: RegExp.$3,
-          tring: RegExp.$1 + '.prototype.' + RegExp.$2
+          string: RegExp.$1 + '.prototype.' + RegExp.$2
         });
         // method
       } else if (/^([\w$.]+)\.([\w$]+)[ \t]*=[ \t]*function/.exec(item)) {
@@ -80,9 +80,9 @@
           type: 'method',
           receiver: RegExp.$1,
           name: RegExp.$2,
-          string: RegExp.$1 + '.' + RegExp.$2,
+          clean: RegExp.$1 + '.' + RegExp.$2,
           args: RegExp.$3,
-          clean: RegExp.$1 + '.' + RegExp.$2 + '()',
+          string: RegExp.$1 + '.' + RegExp.$2 + '()',
           full: RegExp.$1 + '.' + RegExp.$2 + '(' + RegExp.$3 + ')',
         });
         // property

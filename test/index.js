@@ -25,9 +25,9 @@ describe('js-code-context', function () {
       obj.should.be.an.instanceOf(Object);
       obj.should.have.property('type','function');
       obj.should.have.property('name','funcExpression');
-      obj.should.have.property('string','funcExpression');
+      obj.should.have.property('string','funcExpression()');
       obj.should.have.property('args','arg');
-      obj.should.have.property('clean','funcExpression()');
+      obj.should.have.property('clean','funcExpression');
       obj.should.have.property('full','funcExpression(arg)');
       done();
     });

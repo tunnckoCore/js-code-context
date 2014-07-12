@@ -1,3 +1,8 @@
+## v1.1.0 / July 11, 2014
+- fix wrong key names of returning object.
+- full compitabillity with context object returning by [dox][dox-url]
+- edit tests
+
 ## v1.0.2 / July 10, 2014
 - add cli
 
@@ -36,3 +41,5 @@
 
 [ferver-img]: http://img.shields.io/badge/using-ferver-585858.svg
 [ferver-url]: https://github.com/jonathanong/ferver
+
+[dox-url]: https://github.com/visionmedia/dox
